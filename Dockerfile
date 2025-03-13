@@ -29,5 +29,10 @@ RUN mkdir /opt/app
 
 COPY --from=builder /opt/app/ /opt/app/
 
+# RUN cp /opt/app/app.jar /opt/app/app.jar2 && rm -rvf /opt/app/app.jar2
+
+# RUN cp /opt/app/app.jar /opt/app/app.jar3
+# RUN rm -rvf /opt/app/app.jar3
+
 CMD ["java", "-jar", "/opt/app/app.jar"]
 
